@@ -1,0 +1,304 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: call_rasa
+  examples: |
+    - hey hero
+    - hero
+    - hero help
+    - hero please help
+    - hero give suggestion
+
+- intent: food
+  examples: |
+    - asparagus
+    - apples
+    - avacado
+    - alfalfa
+    - almond
+    - arugala
+    - artichoke
+    - applesauce
+    - noodles
+    - antelope
+    - albacore tuna
+    - Apple juice
+    - Avocado roll
+    - Bruscetta
+    - bacon
+    - black beans
+    - bagels
+    - baked beans
+    - BBQ
+    - bison
+    - barley
+    - beer
+    - bisque
+    - bluefish
+    - bread
+    - broccoli
+    - buritto
+    - babaganoosh
+    - Cabbage
+    - cake
+    - carrots
+    - carne asada
+    - celery
+    - cheese
+    - chicken
+    - catfish
+    - chips
+    - chocolate
+    - chowder
+    - clams
+    - coffee
+    - cookies
+    - corn
+    - cupcakes
+    - crab
+    - curry
+    - cereal
+    - chimichanga
+    - dates
+    - dips
+    - duck
+    - dumplings
+    - donuts
+    - eggs
+    - enchilada
+    - eggrolls
+    - English muffins
+    - edimame
+    - eel sushi
+    - fajita
+    - falafel
+    - fish
+    - franks
+    - fondu
+    - French toast
+    - French dip
+    - Garlic
+    - ginger
+    - gnocchi
+    - goose
+    - granola
+    - grapes
+    - green beans
+    - Guancamole
+    - gumbo
+    - grits
+    - Graham crackers
+    - ham
+    - halibut
+    - hamburger
+    - honey
+    - huenos rancheros
+    - hash browns
+    - hot dogs
+    - haiku roll
+    - hummus
+    - ice cream
+    - Irish stew
+    - Indian food
+    - Italian bread
+    - jambalaya
+    - jelly
+    - jam
+    - jerky
+    - jalapeñ
+    - kale
+    - kabobs
+    - ketchup
+    - kiwi
+    - kidney beans
+    - kingfish
+    - lobster
+    - Lamb
+    - Linguine
+    - Lasagna
+    - Meatballs
+    - Moose
+    - Milk
+    - Milkshake
+    - Noodles
+    - Ostrich
+    - Pizza
+    - Pepperoni
+    - Porter
+    - Pancakes
+    - Quesadilla
+    - Quiche
+    - Reuben
+    - Spinach
+    - Spaghetti
+    - Tater tots
+    - Toast
+    - Venison
+    - Waffles
+    - Wine
+    - Walnuts
+    - Yogurt
+    - Ziti
+    - Zucchini
+    - chinese
+    - italain
+    - spicy
+    - salty
+    - sweet
+    - dairy
+    - fruits
+    - grains
+    - meat
+    - confections
+    - vegetables
+    - water
+    - japanese
+    - korean
+    - indian
+    - thai
+    - hungarian
+    - american
+    - mexican
+    - hot food
+    - vitenamese
+    - asian
+    - Baked goods
+    - Seafood
+    - Beverages
+
+- intent: bar
+  examples: |
+    - i want alcohol
+    - i want beer
+    - wine
+    - i want to go to drink
+    - drunk
+    - vodka
+
+- intent: cafe
+  examples: |
+    - i want cafe
+    - i want coffee
+    - coffee
+    - cafe
+    - i want tea
+    - tea
+    - i want scocktail
+    - cocktail
+    - mix
+
+- intent: meal_delivery
+  examples: |
+    - food delivery
+    - delivery
+    - order food
+    - order
+
+- intent: meal_takeaway
+  examples: |
+    - food takeaway
+    - takeaway
+    - order food
+    - order
+
+- intent: restaurant
+  examples: |
+    - i wanna eat
+    - im hungry
+    - i want eat
+    - meal 
+    - meat
+    - hungry
+    - restaurant
+    - go eat
+    - go to restaurant

@@ -1,0 +1,67 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: rasa path
+  steps:
+  - intent: call_rasa
+  - action: scan_rasa
+
+- story: food path
+  steps:
+  - intent: food
+  - action: scan_food
+
+- story: bar path
+  steps:
+  - intent: bar
+  - action: scan_bar
+
+- story: cafe path
+  steps:
+  - intent: cafe
+  - action: scan_cafe
+
+- story: delivery path
+  steps:
+  - intent: meal_delivery
+  - action: scan_meal_delivery
+
+- story: takeaway path
+  steps:
+  - intent: meal_takeaway
+  - action: scan_meal_takeaway
+
+- story: restaurant path
+  steps:
+  - intent: restaurant
+  - action: scan_restaurant
+
+
